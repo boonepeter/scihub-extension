@@ -1,0 +1,34 @@
+{
+    "name": "scihub downloader",
+    "version": "1.0",
+    "description": "Extension to download articles through scihub",
+    "permissions": [
+        "activeTab",
+        "declarativeContent", 
+        "storage",
+        "notifications",
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/sci-download16.png",
+            "32": "images/sci-download32.png",
+            "48": "images/sci-download48.png",
+            "128": "images/sci-download128.png"
+        }
+    },
+    "icons": {
+        "16": "images/sci-download16.png",
+        "32": "images/sci-download32.png",
+        "48": "images/sci-download48.png",
+        "128": "images/sci-download128.png"
+      },
+    "manifest_version": 2
+  }
